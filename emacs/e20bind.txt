@@ -1,0 +1,571 @@
+Key translations:
+key             binding
+---             -------
+
+C-x		Prefix Command
+
+C-x 8		iso-transl-ctl-x-8-map
+
+Global Bindings:
+key             binding
+---             -------
+
+C-@		set-mark-command
+C-a		beginning-of-line
+C-b		backward-char
+C-c		mode-specific-command-prefix
+C-d		delete-char
+C-e		end-of-line
+C-f		forward-char
+C-g		keyboard-quit
+C-h		help-command
+TAB		indent-for-tab-command
+C-j		newline-and-indent
+C-k		kill-line
+C-l		recenter
+RET		newline
+C-n		next-line
+C-o		open-line
+C-p		previous-line
+C-q		quoted-insert
+C-r		isearch-backward
+C-s		isearch-forward
+C-t		transpose-chars
+C-u		universal-argument
+C-v		scroll-up
+C-w		kill-region
+C-x		Control-X-prefix
+C-y		yank
+C-z		iconify-or-deiconify-frame
+ESC		ESC-prefix
+C-\		toggle-input-method
+C-]		abort-recursive-edit
+C-_		undo
+SPC .. ~	self-insert-command
+DEL		delete-backward-char
+<Latin-1>	self-insert-command
+<Latin-2>	self-insert-command
+<Latin-3>	self-insert-command
+<Latin-4>	self-insert-command
+<TIS620>	self-insert-command
+<ISO8859-7>	self-insert-command
+<ISO8859-6>	self-insert-command
+<ISO8859-8>	self-insert-command
+<JISX0201 Kana>			self-insert-command
+<JISX0201 Roman>		self-insert-command
+<ISO8859-5>			self-insert-command
+<Latin-5>	self-insert-command
+<JISX0208.1978>			self-insert-command
+<GB2312>	self-insert-command
+<JISX0208>	self-insert-command
+<KSC5601>	self-insert-command
+<JISX0212>	self-insert-command
+<CNS11643-1>	self-insert-command
+<CNS11643-2>	self-insert-command
+<Big5>		self-insert-command
+<Big5>		self-insert-command
+<SiSheng>	self-insert-command
+<IPA>		self-insert-command
+<VISCII lower>	self-insert-command
+<VISCII upper>	self-insert-command
+<Arabic digit>	self-insert-command
+<Arabic 1-col>	self-insert-command
+<rev ASCII>	self-insert-command
+<Lao>		self-insert-command
+<Arabic 2-col>	self-insert-command
+<IS 13194>	self-insert-command
+<Indian 1-col>	self-insert-command
+<Tibetan 1-col>			self-insert-command
+<Ethiopic>	self-insert-command
+<CNS11643-3>	self-insert-command
+<CNS11643-4>	self-insert-command
+<CNS11643-5>	self-insert-command
+<CNS11643-6>	self-insert-command
+<CNS11643-7>	self-insert-command
+<Indian 2-col>	self-insert-command
+<Tibetan 2-col>			self-insert-command
+
+vertical-line	Prefix Command
+vertical-scroll-bar		Prefix Command
+mode-line	Prefix Command
+C-down-mouse-3	mouse-major-mode-menu
+S-down-mouse-1	mouse-set-font
+C-down-mouse-1	mouse-buffer-menu
+mouse-3		mouse-save-then-kill
+mouse-2		mouse-yank-at-click
+triple-mouse-1	mouse-set-point
+double-mouse-1	mouse-set-point
+drag-mouse-1	mouse-set-region
+mouse-1		mouse-set-point
+down-mouse-1	mouse-drag-region
+M-mouse-2	mouse-yank-secondary
+M-mouse-3	mouse-secondary-save-then-kill
+M-down-mouse-1	mouse-drag-secondary
+M-drag-mouse-1	mouse-set-secondary
+M-mouse-1	mouse-start-secondary
+C-down-mouse-2	facemenu-menu
+f2		2C-command
+f10		tmm-menubar
+f1		help-command
+help		help-command
+C-M-backspace	backward-kill-sexp
+C-M-delete	backward-kill-sexp
+S-delete	kill-region
+C-delete	backward-kill-word
+C-left		backward-word
+C-right		forward-word
+M-left		backward-word
+M-right		forward-word
+mouse-movement	ignore
+deletechar	delete-char
+deleteline	kill-line
+insertline	open-line
+redo		repeat-complex-command
+undo		undo
+S-insert	yank
+C-insert	kill-ring-save
+insert		overwrite-mode
+execute		execute-extended-command
+M-begin		beginning-of-buffer-other-window
+begin		beginning-of-buffer
+M-end		end-of-buffer-other-window
+end		end-of-buffer
+M-prior		scroll-other-window-down
+M-next		scroll-other-window
+C-next		scroll-left
+C-prior		scroll-right
+C-down		forward-paragraph
+C-up		backward-paragraph
+next		scroll-up
+prior		scroll-down
+down		next-line
+right		forward-char
+up		previous-line
+left		backward-char
+M-home		beginning-of-buffer-other-window
+home		beginning-of-buffer
+find		search-forward
+menu		execute-extended-command
+C-SPC		set-mark-command
+C--		negative-argument
+C-9		digit-argument
+C-8		digit-argument
+C-7		digit-argument
+C-6		digit-argument
+C-5		digit-argument
+C-4		digit-argument
+C-3		digit-argument
+C-2		digit-argument
+C-1		digit-argument
+C-0		digit-argument
+C-/		undo
+make-frame-visible		ignore-event
+iconify-frame			ignore-event
+delete-frame			handle-delete-frame
+switch-frame			handle-switch-frame
+
+C-h h		view-hello-file
+C-h C		describe-coding-system
+C-h I		describe-input-method
+C-h C-\		describe-input-method
+C-h L		describe-language-environment
+C-h C-l		describe-language-environment
+C-h q		help-quit
+C-h v		describe-variable
+C-h w		where-is
+C-h t		help-with-tutorial
+C-h s		describe-syntax
+C-h p		finder-by-keyword
+C-h n		view-emacs-news
+C-h C-n		view-emacs-news
+C-h m		describe-mode
+C-h l		view-lossage
+C-h TAB		info-lookup-symbol
+C-h C-k		Info-goto-emacs-key-command-node
+C-h C-f		Info-goto-emacs-command-node
+C-h 4		Prefix Command
+C-h i		info
+C-h F		view-emacs-FAQ
+C-h f		describe-function
+C-h d		describe-function
+C-h k		describe-key
+C-h c		describe-key-briefly
+C-h b		describe-bindings
+C-h a		apropos-command
+C-h C-p		describe-project
+C-h C-w		describe-no-warranty
+C-h C-d		describe-distribution
+C-h C-c		describe-copying
+C-h ?		help-for-help
+C-h f1		help-for-help
+C-h help	help-for-help
+C-h C-h		help-for-help
+
+C-x C-@		pop-global-mark
+C-x C-b		list-buffers
+C-x C-c		save-buffers-kill-emacs
+C-x C-d		list-directory
+C-x C-e		eval-last-sexp
+C-x C-f		find-file
+C-x TAB		indent-rigidly
+C-x C-k		edit-kbd-macro
+C-x C-l		downcase-region
+C-x RET		Prefix Command
+C-x C-n		set-goal-column
+C-x C-o		delete-blank-lines
+C-x C-p		mark-page
+C-x C-q		vc-toggle-read-only
+C-x C-r		find-file-read-only
+C-x C-s		save-buffer
+C-x C-t		transpose-lines
+C-x C-u		upcase-region
+C-x C-v		find-alternate-file
+C-x C-w		write-file
+C-x C-x		exchange-point-and-mark
+C-x C-z		iconify-or-deiconify-frame
+C-x ESC		Prefix Command
+C-x $		set-selective-display
+C-x '		expand-abbrev
+C-x (		start-kbd-macro
+C-x )		end-kbd-macro
+C-x +		balance-windows
+C-x -		shrink-window-if-larger-than-buffer
+C-x .		set-fill-prefix
+C-x /		point-to-register-compatibility-binding
+C-x 0		delete-window
+C-x 1		delete-other-windows
+C-x 2		split-window-vertically
+C-x 3		split-window-horizontally
+C-x 4		ctl-x-4-prefix
+C-x 5		ctl-x-5-prefix
+C-x 6		2C-command
+C-x ;		set-comment-column
+C-x <		scroll-left
+C-x =		what-cursor-position
+C-x >		scroll-right
+C-x [		backward-page
+C-x ]		forward-page
+C-x ^		enlarge-window
+C-x `		next-error
+C-x a		Prefix Command
+C-x b		switch-to-buffer
+C-x d		dired
+C-x e		call-last-kbd-macro
+C-x f		set-fill-column
+C-x g		insert-register-compatibility-binding
+C-x h		mark-whole-buffer
+C-x i		insert-file
+C-x j		jump-to-register-compatibility-binding
+C-x k		kill-buffer
+C-x l		count-lines-page
+C-x m		compose-mail
+C-x n		Prefix Command
+C-x o		other-window
+C-x q		kbd-macro-query
+C-x r		Prefix Command
+C-x s		save-some-buffers
+C-x u		advertised-undo
+C-x v		Prefix Command
+C-x x		copy-to-register-compatibility-binding
+C-x z		repeat
+C-x {		shrink-window-horizontally
+C-x }		enlarge-window-horizontally
+C-x DEL		backward-kill-sentence
+
+C-x C-SPC	pop-global-mark
+
+ESC C-@		mark-sexp
+ESC C-a		beginning-of-defun
+ESC C-b		backward-sexp
+ESC C-c		exit-recursive-edit
+ESC C-d		down-list
+ESC C-e		end-of-defun
+ESC C-f		forward-sexp
+ESC C-h		mark-defun
+ESC TAB		complete-symbol
+ESC C-j		indent-new-comment-line
+ESC C-k		kill-sexp
+ESC C-l		reposition-window
+ESC C-n		forward-list
+ESC C-o		split-line
+ESC C-p		backward-list
+ESC C-r		isearch-backward-regexp
+ESC C-s		isearch-forward-regexp
+ESC C-t		transpose-sexps
+ESC C-u		backward-up-list
+ESC C-v		scroll-other-window
+ESC C-w		append-next-kill
+ESC ESC		Prefix Command
+ESC C-\		indent-region
+ESC SPC		just-one-space
+ESC !		shell-command
+ESC $		ispell-word
+ESC %		query-replace
+ESC '		abbrev-prefix-mark
+ESC (		insert-parentheses
+ESC )		move-past-close-and-reindent
+ESC *		pop-tag-mark
+ESC ,		tags-loop-continue
+ESC -		negative-argument
+ESC .		find-tag
+ESC /		dabbrev-expand
+ESC 0 .. ESC 9	digit-argument
+ESC :		eval-expression
+ESC ;		indent-for-comment
+ESC <		beginning-of-buffer
+ESC =		count-lines-region
+ESC >		end-of-buffer
+ESC @		mark-word
+ESC \		delete-horizontal-space
+ESC ^		delete-indentation
+ESC `		tmm-menubar
+ESC a		backward-sentence
+ESC b		backward-word
+ESC c		capitalize-word
+ESC d		kill-word
+ESC e		forward-sentence
+ESC f		forward-word
+ESC g		facemenu-keymap
+ESC h		mark-paragraph
+ESC i		tab-to-tab-stop
+ESC j		indent-new-comment-line
+ESC k		kill-sentence
+ESC l		downcase-word
+ESC m		back-to-indentation
+ESC q		fill-paragraph
+ESC r		move-to-window-line
+ESC t		transpose-words
+ESC u		upcase-word
+ESC v		scroll-down
+ESC w		kill-ring-save
+ESC x		execute-extended-command
+ESC y		yank-pop
+ESC z		zap-to-char
+ESC {		backward-paragraph
+ESC |		shell-command-on-region
+ESC }		forward-paragraph
+ESC ~		not-modified
+ESC DEL		backward-kill-word
+
+ESC C-%		query-replace-regexp
+ESC C-.		find-tag-regexp
+ESC C-/		dabbrev-completion
+ESC S-C-v	scroll-other-window-down
+ESC C-SPC	mark-sexp
+ESC C--		negative-argument
+ESC C-9		digit-argument
+ESC C-8		digit-argument
+ESC C-7		digit-argument
+ESC C-6		digit-argument
+ESC C-5		digit-argument
+ESC C-4		digit-argument
+ESC C-3		digit-argument
+ESC C-2		digit-argument
+ESC C-1		digit-argument
+ESC C-0		digit-argument
+
+vertical-line mouse-1		mouse-select-window
+vertical-line down-mouse-1	mouse-drag-vertical-line
+vertical-line C-mouse-2		mouse-split-window-vertically
+
+vertical-scroll-bar drag-mouse-3
+				scroll-bar-scroll-down
+vertical-scroll-bar mouse-3	scroll-bar-scroll-down
+vertical-scroll-bar down-mouse-2
+				scroll-bar-drag
+vertical-scroll-bar drag-mouse-1
+				scroll-bar-scroll-up
+vertical-scroll-bar mouse-1	scroll-bar-scroll-up
+vertical-scroll-bar C-mouse-2	mouse-split-window-vertically
+
+mode-line C-mouse-2		mouse-split-window-horizontally
+mode-line mouse-3		mouse-delete-window
+mode-line mouse-2		mouse-delete-other-windows
+mode-line down-mouse-1		mouse-drag-mode-line
+mode-line drag-mouse-1		mouse-select-window
+mode-line mouse-1		mouse-select-window
+
+C-down-mouse-2 fc		facemenu-face-menu
+C-down-mouse-2 fg		facemenu-foreground-menu
+C-down-mouse-2 bg		facemenu-background-menu
+C-down-mouse-2 sp		facemenu-special-menu
+C-down-mouse-2 ju		facemenu-justification-menu
+C-down-mouse-2 in		facemenu-indentation-menu
+C-down-mouse-2 rm		facemenu-remove-face-props
+C-down-mouse-2 ra		facemenu-remove-all
+C-down-mouse-2 dp		list-text-properties-at
+C-down-mouse-2 df		list-faces-display
+C-down-mouse-2 dc		list-colors-display
+
+C-h 4 i		info-other-window
+
+C-x RET l	set-language-environment
+C-x RET c	universal-coding-system-argument
+C-x RET C-\	set-input-method
+C-x RET X	set-next-selection-coding-system
+C-x RET x	set-selection-coding-system
+C-x RET p	set-buffer-process-coding-system
+C-x RET k	set-keyboard-coding-system
+C-x RET t	set-terminal-coding-system
+C-x RET f	set-buffer-file-coding-system
+
+C-x ESC :	repeat-complex-command
+C-x ESC ESC	repeat-complex-command
+
+C-x 4 0		kill-buffer-and-window
+C-x 4 .		find-tag-other-window
+C-x 4 d		dired-other-window
+C-x 4 a		add-change-log-entry-other-window
+C-x 4 C-o	display-buffer
+C-x 4 b		switch-to-buffer-other-window
+C-x 4 C-f	find-file-other-window
+C-x 4 r		find-file-read-only-other-window
+C-x 4 f		find-file-other-window
+C-x 4 m		compose-mail-other-window
+
+C-x 5 o		other-frame
+C-x 5 0		delete-frame
+C-x 5 2		make-frame-command
+C-x 5 .		find-tag-other-frame
+C-x 5 d		dired-other-frame
+C-x 5 r		find-file-read-only-other-frame
+C-x 5 C-f	find-file-other-frame
+C-x 5 f		find-file-other-frame
+C-x 5 b		switch-to-buffer-other-frame
+C-x 5 m		compose-mail-other-frame
+
+C-x a n		expand-jump-to-next-slot
+C-x a p		expand-jump-to-previous-slot
+C-x a '		expand-abbrev
+C-x a e		expand-abbrev
+C-x a -		inverse-add-global-abbrev
+C-x a i		Prefix Command
+C-x a +		add-mode-abbrev
+C-x a g		add-global-abbrev
+C-x a C-a	add-mode-abbrev
+C-x a l		add-mode-abbrev
+
+C-x n p		narrow-to-page
+C-x n d		narrow-to-defun
+C-x n w		widen
+C-x n n		narrow-to-region
+
+C-x r l		bookmark-bmenu-list
+C-x r m		bookmark-set
+C-x r b		bookmark-jump
+C-x r f		frame-configuration-to-register
+C-x r w		window-configuration-to-register
+C-x r t		string-rectangle
+C-x r o		open-rectangle
+C-x r y		yank-rectangle
+C-x r d		delete-rectangle
+C-x r k		kill-rectangle
+C-x r c		clear-rectangle
+C-x r +		increment-register
+C-x r n		number-to-register
+C-x r r		copy-rectangle-to-register
+C-x r g		insert-register
+C-x r i		insert-register
+C-x r x		copy-to-register
+C-x r s		copy-to-register
+C-x r j		jump-to-register
+C-x r SPC	point-to-register
+C-x r C-SPC	point-to-register
+C-x r C-@	point-to-register
+
+C-x v ~		vc-version-other-window
+C-x v =		vc-diff
+C-x v v		vc-next-action
+C-x v u		vc-revert-buffer
+C-x v s		vc-create-snapshot
+C-x v r		vc-retrieve-snapshot
+C-x v m		vc-merge
+C-x v l		vc-print-log
+C-x v i		vc-register
+C-x v h		vc-insert-headers
+C-x v g		vc-annotate
+C-x v d		vc-directory
+C-x v c		vc-cancel-version
+C-x v a		vc-update-change-log
+
+ESC ESC ESC	keyboard-escape-quit
+ESC ESC :	eval-expression
+
+ESC g d		facemenu-set-default
+ESC g b		facemenu-set-bold
+ESC g i		facemenu-set-italic
+ESC g l		facemenu-set-bold-italic
+ESC g u		facemenu-set-underline
+ESC g o		facemenu-set-face
+
+C-down-mouse-2 fc d		facemenu-set-default
+C-down-mouse-2 fc b		facemenu-set-bold
+C-down-mouse-2 fc i		facemenu-set-italic
+C-down-mouse-2 fc l		facemenu-set-bold-italic
+C-down-mouse-2 fc u		facemenu-set-underline
+C-down-mouse-2 fc o		facemenu-set-face
+
+C-down-mouse-2 fg o		facemenu-set-foreground
+
+C-down-mouse-2 bg o		facemenu-set-background
+
+C-down-mouse-2 sp r		facemenu-set-read-only
+C-down-mouse-2 sp v		facemenu-set-invisible
+C-down-mouse-2 sp t		facemenu-set-intangible
+C-down-mouse-2 sp s		facemenu-remove-special
+
+C-down-mouse-2 ju u		set-justification-none
+C-down-mouse-2 ju l		set-justification-left
+C-down-mouse-2 ju r		set-justification-right
+C-down-mouse-2 ju b		set-justification-full
+C-down-mouse-2 ju c		set-justification-center
+
+C-down-mouse-2 in increase-left-margin
+				increase-left-margin
+C-down-mouse-2 in decrease-left-margin
+				decrease-left-margin
+C-down-mouse-2 in increase-right-margin
+				increase-right-margin
+C-down-mouse-2 in decrease-right-margin
+				decrease-right-margin
+
+C-x a i l	inverse-add-mode-abbrev
+C-x a i g	inverse-add-global-abbrev
+
+Function key map translations:
+key             binding
+---             -------
+
+iso-lefttab	backtab
+M-escape	M-ESC
+M-return	M-RET
+M-clear		M-C-l
+M-linefeed	M-C-j
+M-tab		M-TAB
+M-delete	M-DEL
+M-backspace	M-DEL
+escape		ESC
+return		RET
+clear		C-l
+linefeed	C-j
+tab		TAB
+delete		DEL
+backspace	DEL
+kp-equal	=
+kp-divide	/
+kp-decimal	.
+kp-subtract	-
+kp-separator	,
+kp-add		+
+kp-multiply	*
+kp-enter	RET
+kp-tab		TAB
+kp-space	SPC
+kp-9		9
+kp-8		8
+kp-7		7
+kp-6		6
+kp-5		5
+kp-4		4
+kp-3		3
+kp-2		2

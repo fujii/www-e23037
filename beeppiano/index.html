@@ -1,0 +1,46 @@
+<html>
+<head>
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-2022-jp"> 
+ <title>BeepPiano for Linux</title>
+ <link rel="stylesheet" href="default.css" type="text/css">
+</head>
+
+<body>
+
+<h1>BeepPiano for Linux</h1>
+
+<p>
+キーボードの A, S, D, F … を押すと
+ド、レ、ミ、ファ…の音が鳴ります。
+</p>
+
+<h2>特徴</h2>
+<ul>
+ <li> ビープを鳴らすのに outb_p() や inb_p() を使用
+ <li> /dev/console からキーボードのキーのアップ、ダウンを検出
+</ul>
+
+<div>
+<img src="bind.png" alt="キーバインドの画像">
+</div>
+
+<h2>動作条件</h2>
+<ul>
+ <li> Linux/i386
+ <li> スーパーユーザの権限で実行
+ <li> 日本語106キーボードが弾きやすいかも
+</ul>
+
+<h2>ダウンロード</h2>
+<p>
+ダウンロードはこちらの<a href="src/">ファイル一覧</a>より。
+</p>
+
+<hr>
+<p>
+Copyright (C) 2000-2001 藤井 宏憲
+</p>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" CONTENT="text/html; charset=iso-2022-jp"> 
+ <meta http-equiv="Content-Style-Type" content="text/css">
+ <title>DBP - Sylpheed の暗背景化</title>
+ <link rel="stylesheet" href="default.css" type="text/css">
+</head>
+
+<body>
+
+<div>
+<a href="../../">Home</a> &gt;
+<a href="../">暗背景化</a> &gt;
+Sylpheed の暗背景化
+</div>
+
+<h2>Sylpheed の暗背景化</h2>
+
+<p>
+以下のような ~/.sylpheed/gtkrc ファイルを作成する。
+これにより、背景をグレーにすることができる。
+</p>
+
+<pre>
+style "text"
+{
+  base[NORMAL] = "#d0d0d0"
+}
+
+class "Gtk*Text"  style "text"
+</pre>
+
+
+<hr>
+<p>
+Copyright (C) 2001 藤井 宏憲
+</p>
+
+</body>
+</html>

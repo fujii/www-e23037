@@ -1,0 +1,66 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" CONTENT="text/html; charset=iso-2022-jp"> 
+ <meta http-equiv="Content-Style-Type" content="text/css">
+ <title>DBP - Emacsの暗背景化</title>
+ <link rel="stylesheet" href="default.css" type="text/css">
+</head>
+
+<body>
+
+<div>
+<a href="../../">Home</a> &gt;
+<a href="../">暗背景化</a> &gt;
+Emacsの暗背景化
+</div>
+
+<h2>Emacsの暗背景化</h2>
+
+<p>
+Emacs のカラー表示が見にくいなと思ったら、
+.emacs もしくは .emacs.el ファイルの中から
+</p>
+
+<pre>
+ (cond (window-system
+        (setq hilit-mode-enable-list  '(not text-mode)
+              hilit-background-mode   'light
+              hilit-inhibit-hooks     nil
+              hilit-inhibit-rebinding nil)
+ 
+        (require 'hilit19)
+        ))
+</pre>
+
+<p>
+こんなこんなかんじのところを探します。
+あくまで、このようなかんじのところです。
+そしたら、以下のようにします。
+</p>
+
+<pre>
+ (cond (window-system
+        (setq hilit-mode-enable-list  '(not text-mode)
+              ;hilit-background-mode   'light
+              hilit-background-mode   'dark
+              hilit-inhibit-hooks     nil
+              hilit-inhibit-rebinding nil)
+ 
+        (require 'hilit19)
+        ))
+
+</pre>
+
+<p>
+「;」 (セミコロン) から行末まではコメントです。
+
+</p>
+
+
+<hr>
+<p>
+Copyright (C) 2001/4 藤井 宏憲
+</p>
+
+</body>
+</html>

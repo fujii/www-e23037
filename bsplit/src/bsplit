@@ -1,0 +1,51 @@
+#! /bin/sh
+#
+#  bsplit   
+#             Copyright (C) 2000-2001 Hironori FUJII
+#
+#  usage:
+#    bsplit filename
+#    bsplit -h
+#
+#  フロッピーサイズにファイルを分割
+#  結合は cat を使おう
+
+ss=1457664 # 分割サイズ
+
+if [ $# = 0 -o "$1" = -h ]
+then
+  echo Usage:
+  echo "  " `basename "$0"` "<filename>"
+  echo "  " `basename "$0"` -h
+  exit   
+fi
+
+if [ ! -f "$1" ]
+then
+  echo $0: $1 is not a file. >&2
+  exit
+fi
+
+base=`basename "$1"`
+
+i=0
+while [ $i -lt 1000 ]
+do
+  out="$base".`printf %03d $i`
+
+  # printf がないときは
+  #out="$base".`expr $i / 100``expr $i / 10 % 10``expr $i % 10`
+
+  # 分割
+  dd if="$1" of="$out" ibs=$ss obs=$ss skip=$i count=1 > /dev/null 2>&1
+
+  if [ ! -s "$out" ]  # 出力ファイルが空っぽ
+  then
+    rm "$out"
+    exit 0
+  fi
+
+  echo $out
+
+  i=`expr $i + 1`
+done

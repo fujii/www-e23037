@@ -1,0 +1,47 @@
+#! /bin/sh
+
+# VT-100 互換用 カラーカタログ
+# Copyright (C) 2001 Hironori FUJII 
+
+reset-color(){
+  echo -en "\033[0m"
+}
+
+put-color-a()
+{
+  str="\033[0;$1"
+  if [ ! "$2" = d ]
+  then
+    str="${str};3$2"
+  fi
+  if [ ! "$3" = d ]
+  then
+    str="${str};4$3"
+  fi
+  str="${str}mA\033[0m"
+  echo -ne "$str"
+}
+
+reset-color
+
+echo "  \\ fg   30 31 32 33 34 35 36 37"
+echo "bg \\"  
+
+for bg in d 0 1 2 3 4 5 6 7
+do
+  if [  $bg = d ]
+  then
+    echo -n "     "
+  else
+    echo -n "4$bg   "
+  fi
+
+  for fg in d  0 1 2 3 4 5 6 7
+  do
+    echo -n " "
+    put-color-a 0 $fg $bg
+    put-color-a 1 $fg $bg   # bold
+  done
+
+  echo ""  
+done

@@ -1,0 +1,59 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" CONTENT="text/html; charset=iso-2022-jp"> 
+ <meta http-equiv="Content-Style-Type" content="text/css">
+ <title>DBP - kterm の暗背景化</title>
+ <link rel="stylesheet" href="default.css" type="text/css">
+</head>
+
+<body>
+
+<div>
+<a href="../../">Home</a> &gt;
+<a href="../">暗背景化</a> &gt;
+kterm の暗背景化
+</div>
+
+<h2>kterm の暗背景化</h2>
+
+<p>
+kterm は -rv オプションを付けての暗背景化が賢くないです。
+-rv により白い背景は黒くなるのですが、
+青い文字は青いままなのです。
+これでは黒い背景に青い文字。
+とても見づらいです。
+青色は水色などにしなくてはなりません。 
+以下を .Xdefaults ファイルに追加すれば、
+とりあえずはうまく行きます。
+xrdb 唱えるのも忘れずに。
+</p>
+
+<pre>
+*reverseVideo:on
+
+*VT100*textColor0:              white
+*VT100*textColor1:              red
+*VT100*textColor2:              green
+*VT100*textColor3:              yellow
+*VT100*textColor4:              spring green
+*VT100*textColor5:              pink
+*VT100*textColor6:              cyan
+*VT100*textColor7:              black
+
+*VT100*textColor8:              white
+*VT100*textColor9:              red
+*VT100*textColor10:             green
+*VT100*textColor11:             yellow
+*VT100*textColor12:             spring green
+*VT100*textColor13:             pink
+*VT100*textColor14:             cyan
+*VT100*textColor15:             gray30
+</pre>
+
+<hr>
+<p>
+Copyright (C) 2001/4 藤井 宏憲
+</p>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-2022-jp"> 
+ <link rel="stylesheet" href="default.css" type="text/css">
+ <title>browser</title>
+</head>
+
+<body>
+
+<h1>こんなWebブラウザが欲しい！</h1>
+
+<h2>仕様</h2>
+
+<ol>
+<li>emacs-w3mのようにEmacs内で使用</li>
+<li>html や 画像はダウンロードしながら表示する。
+  こうでなくては、体感速度が遅くなる。</li>
+<li>レンダリングはCで、入力関係はelispで実装。</li>
+<li>table、frameのレンダリング。 w3mを使ったらlynxには戻れない。</li>
+<li>css対応。lynxやemacs/W3がやってるし。</li>
+<li>XML対応。今後のことを考えて。</li>
+<li>カスタマイズできる。とくにキーバインドはもはや宗教。
+  あと、画像のダウンロードもgaleonのように。
+  もちろん、カスタマイズはelispにて。</li>
+<li>JS(JavaScript)対応</li>
+<li>できるかぎりプロポーショナルフォント対応。
+  罫線(┨ ┯ ┗ ├ など)でtable枠を書くため、原理的に不可能でない範囲で。</li>
+<li>ページのキャッシュはEmacsのバッファとしてではなく、
+  C側で蓄えた方がいいのかな。</li>
+<li>Emacs21とXEmacs21がターゲットかも。</li>
+<li>文字コーディングの指定とコーディングの自動判別の指定は別物。</li>
+<li>SVGは特許について調べてから考える。</li>
+<li></li>
+</ol>
+
+<p>
+つまり、emacs/W3をCで再発明。
+</p>
+
+
+
+<h2>利用できそうなもの</h2>
+
+<ul>
+<li>w3m とそのvariant</li>
+<li><a href="http://emacs-w3m.namazu.org/">emacs-w3m</a></li>
+<li>lynx</li>
+<li><a href="http://artax.karlin.mff.cuni.cz/~mikulas/links/">links</a></li>
+<li>libwww</li>
+<li>emacs/w3</li>
+<li><a href="http://www.bbassett.net/njs/">NJS JavaScript Interpreter</a></li>
+</ul>
+
+<p>
+Debianも使う者としてはライセンスのチャンポンは避けるべきなのだろうか？
+GPLとLGPLしか利用しないとなると、作業量は増えそうだ。
+</p>
+
+<h2>今後の予定</h2>
+
+<p>
+Cとelispの通信プロトコルをどうしよう。
+JS対応となると複雑そう。
+</p>
+
+<p>
+Cの内部文字コードは何にしよう。
+UCSより、Emacsの内部文字コードと同じにした方が高速になりそう。
+それって、プロトコルに使えるのだろうか？
+</p>
+
+<p>
+仕様が決まれば、利用するfree softwareの選定とソース読み。
+</p>
+
+<p>
+協力者募集中。fujii@chi.its.hiroshima-cu.ac.jp まで。
+</p>
+
+<p>
+Emacsの内部文字コードはemacs-muleということは、
+調べてみるとすぐにわかった。
+しかし、内部コードをプロトコルに使えるのだろうか？
+あと、font-lockを含めた内部コードは何なんだろう？
+また、emacs-muleということはmule機能と関係してそうな名前だが、
+英語圏の人はmule機能を使ってるのだろうか？
+ヨーロッパなどは使ってると思うのだが。
+</p>
+
+<p>
+TODOを読んだ。
+いくつかの記述が大きくこのプロジェクトに関係しているようです。
+以下、抜粋。
+</p>
+
+<ul>
+<li>Implement the design for Unicode-based internal encoding for Mule.</li>
+<li>Get some major packages installed: W3/url (development version needs
+  significant work), PSGML, Mule-UCS, Tramp (?).  Check the
+  assignments file for other packages which might go in and have been
+  missed.</li>
+<li>Investigate using GNU Lightning or similar system for incremental
+  compilation of selected bytecode functions to subrs.  Converting CCL
+  programs to native code is probably the first thing to try, though.</li>
+<li>Add support for SVG (Scalable Vector Graphics) rendering to Emacs.</li>
+</ul>
+
+<p>
+W3は取り込まれるようだし、
+内部文字コーディングも変更したいみたい。
+さてこれから、どうしよ。
+</p>
+
+
+
+<h2>開発日誌</h2>
+
+<p>
+しばらく、Webページの更新がないようなら、挫折してます。
+<br>
+<br>2001/10/23 卒業研究にため、一時中止。多分再開は春休みでしょう。
+<br>2001/10/11 とりあえず、elispを勉強したくなったので、
+  図書館で本を借りてきた。
+  とても、ぶ厚い本です。値段が気になって調べてみると、4,300円、安い。
+  たぶん同じものがgnujdocにもあります。
+<br>2001/10/7 Emacs21を入手。TODOとJOKESを読んだ。
+<br>2001/10/5 Emacsの内部文字コーディングはemacs-mule
+<br>2001/10/4 Webページを書き、公開。
+  欲しい機能を並べていると早くも挫折しそうです。
+  私は欲張りすぎのようです。
+</p>
+
+
+<hr>
+<p>
+Copyright (C) 2001 藤井 宏憲
+</p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" CONTENT="text/html; charset=iso-2022-jp"> 
+ <meta http-equiv="Content-Style-Type" content="text/css">
+ <title>DBP - The Dark Background Party</title>
+ <link rel="stylesheet" href="default.css" type="text/css">
+</head>
+
+<body>
+
+<div>
+<a href="../../">Home</a> &gt;
+<a href="../">暗背景化</a> &gt;
+X Window System の暗背景化
+</div>
+
+<h2>X Window System の暗背景化</h2>
+
+<p>
+Xは暗背景党に配慮されています。
+</p>
+
+<pre>
+xterm -rv
+</pre>
+
+<p>
+このように -rv オプションを付けるだけで、
+とりあえずは暗背景化されます。
+</p>
+
+<p>
+しかし、毎度 -rv オプションを付けるのは大変なので、
+ホームディレクトリ内の .Xdefaults (または、 .Xresources)
+ファイル に以下の1行を追加します。
+</p>
+
+<pre>
+*reverseVideo:on
+</pre>
+
+<p>
+こうすれば、今後起動する X クライアントは暗背景化されます。
+場合によっては、
+</p>
+
+<pre>
+xrdb .Xdefaults
+</pre>
+
+<p>
+と、唱える必要があります。
+なにはともあれこれで、
+editres, xfontsel, xcalc, xterm などは暗背景化されます。
+</p>
+
+
+<hr>
+<p>
+Copyright (C) 2001 藤井 宏憲
+</p>
+
+</body>
+</html>
